@@ -193,13 +193,40 @@ nav {
   margin-left: 94px;
 }
 
+
+
+.phone::before {
+  display: inline-block;
+  content: "";
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(242, 0, 0);
+  width: 10px;
+  height: 16px;
+  background-image: url(../images/smartphone.svg);
+}
+
 /* --------------------------------HERO---------------------------------- */
 
 .hero {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: #2f303a;
+}
+
+.bg-img {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-img.jpg);
 }
 
 .hero-title {
@@ -220,7 +247,8 @@ nav {
 }
 
 .hero-btn {
-  display: inline-block;
+  align-items: center;
+  display: inline-flex;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 136px;
@@ -240,6 +268,25 @@ nav {
 .hero-btn:focus {
   background-color: #188ce8;
 }
+
+.hero-btn::before {
+  content: "";
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  /* background-color: red; */
+  background-image: url(../images/clock\ 1.png);
+  background-size: contain;
+}
+
+/* .hero-btn > .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  /* background-color: red; */
+  background-image: url(../images/antenna\ 1.png);
+  background-size: contain;
+} */
 
 /* ---------------------------FEATURES-------------------------- */
 
@@ -297,6 +344,34 @@ nav {
 .features-item + .features-item {
   margin-left: 30px;
 }
+
+.features-item::before {
+  content: "";
+  display: block;
+  margin-bottom: 30px;
+  height: 120px;
+  background-color: #F5F4FA;  
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.antena::before { 
+  background-image: url(../images/antenna.svg);  
+}
+
+.clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+
 
 /* ----------------------------WORKS------------------------------ */
 
