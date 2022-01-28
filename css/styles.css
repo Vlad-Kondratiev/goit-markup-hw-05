@@ -97,7 +97,9 @@ ul {
   padding-bottom: 94px;
 }
 
+
 /* -------------------------------HEADER---------------------------------*/
+
 
 .header-page {
   border-bottom-width: 1px;
@@ -193,8 +195,6 @@ nav {
   margin-left: 94px;
 }
 
-
-
 .phone::before {
   display: inline-block;
   content: "";
@@ -207,7 +207,9 @@ nav {
   background-image: url(../images/smartphone.svg);
 }
 
+
 /* --------------------------------HERO---------------------------------- */
+
 
 .hero {
   text-align: center;
@@ -224,8 +226,7 @@ nav {
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+      rgba(47, 48, 58, 0.4)),
     url(../images/hero-img.jpg);
 }
 
@@ -269,7 +270,7 @@ nav {
   background-color: #188ce8;
 }
 
-.hero-btn::before {
+/* .hero-btn::before {
   content: "";
   margin-right: 10px;
   width: 20px;
@@ -277,7 +278,7 @@ nav {
   /* background-color: red; */
   background-image: url(../images/clock\ 1.png);
   background-size: contain;
-}
+} */
 
 /* .hero-btn > .icon {
   width: 20px;
@@ -413,7 +414,7 @@ nav {
 
 .team-text {
   margin-top: 0;
-  margin-bottom: 0px;
+  margin-bottom: 30px;
 }
 
 .team {
@@ -429,6 +430,38 @@ nav {
 .team-item:nth-child(4n) {
   margin-right: 0px;
 }
+
+.team-socials-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-socials-link {
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-socials-link:hover {
+  background-color: var(--accent-color);
+}
+
+.team-socials-link:hover .team-socials-icon {
+  fill: white;
+}
+
+.team-socials-item + .team-socials-item {
+  margin-left: 10px;
+}
+
+.team-socials-icon {
+  fill: #AFB1B8;
+}
+
 
 /* -----------------------------FOOTER------------------------------*/
 
