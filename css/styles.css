@@ -235,6 +235,8 @@ nav {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
     url(../images/hero-img.jpg);
+  background-size: 100%, cover;
+  background-position: center; 
 }
 
 .hero-title {

@@ -34,7 +34,8 @@
                         <use href="./images/icons.svg#icon-smartphone"></use>
                     </svg>+38 099 111 11 11</a>
             </ul>
-        </div>        
+        </div>
+        
     </header>
 
 
@@ -407,6 +408,14 @@
                 </div>
             </div>
         </footer>
+    </main>
+    <script>
+        const { height: pageHeaderHeight } = document
+            .querySelector(".page-header")
+            .getBoundingClientRect();
+
+        document.body.style.paddingTop = `${pageHeaderHeight}px`;
+    </script>  
 </body>
 
 </html>
