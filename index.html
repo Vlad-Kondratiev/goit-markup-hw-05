@@ -45,13 +45,13 @@
 
         <section class="hero">            
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <a href="" class="hero-btn">Заказать услугу</a>
-            <!-- <button class="button primary" type="button">Заказать услугу</button> -->
+            <!-- <a href="" class="hero-btn" data-modal-open>Заказать услугу</a> -->
+            <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
             <!-- <a href="" class="hero-btn"><span class="icon"></span>Заказать услугу</a>             -->
         </section>
 
 
-        <!---------------------FEATURES---------------------------->
+        <!-------------------------------FEATURES-------------------------------->
 
 
         <section class="section">
@@ -108,7 +108,7 @@
         </section>
 
 
-        <!-----------------------WORKS----------------------------->
+        <!---------------------------------WORKS--------------------------------->
 
 
         <section class="section work-section">
@@ -118,15 +118,18 @@
                 
                 <li class="works-item">
                     <img src="./images/box1.jpg" alt="Фото рук на клавиатуре и код на мониторе" width="370">
+                    <p class="works-item-top-text">Десктопные приложения</p>
                 </li>
 
                 <li class="works-item">
                     <img src="./images/box2.jpg" alt="Фото рук на клавиатуре и дизайн интерфейса на мониторе"
                         width="370">
+                    <p class="works-item-top-text">Мобильные приложения</p>    
                 </li>
 
                 <li class="works-item">
                     <img src="./images/box3.jpg" alt="Фото рук выбирающих цвет из палитры на мониторе" width="370">
+                    <p class="works-item-top-text">Дизайнерские решения</p>
                 </li>
             </ul>
             </div>
@@ -408,14 +411,26 @@
                 </div>
             </div>
         </footer>
-    </main>
-    <script>
-        const { height: pageHeaderHeight } = document
-            .querySelector(".page-header")
-            .getBoundingClientRect();
 
-        document.body.style.paddingTop = `${pageHeaderHeight}px`;
-    </script>  
+
+        <!-- ================================= MODAL ================================== -->
+
+
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="modal-close-btn" data-modal-close>
+                    <svg class="modal-close-icon" width="18" height="18">
+                        <use href="./images/icons.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+
+    </main>
+    
+    <script src="./js/modal.js"></script>
+
 </body>
 
 </html>
